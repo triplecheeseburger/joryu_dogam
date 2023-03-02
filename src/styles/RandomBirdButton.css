@@ -1,0 +1,28 @@
+.qbox {
+  width: 60%;
+  border-radius: 5px;
+  max-height: 50vh;
+  max-width: 50vh;
+}
+
+.buttonWrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonContainer a {
+  margin-block: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.buttonDescription {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3.0rem;
+  font-family: "Nanum Futuretree";
+}

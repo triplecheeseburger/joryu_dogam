@@ -1,0 +1,51 @@
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.birdList {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	margin-inline: 1.5rem;
+	overflow-y: scroll;
+	overflow-x: clip;
+}
+
+.bottom {
+	width: 100%;
+	z-index: 3;
+	color: var(--green);
+	word-break: break-all;
+	font-size: 7rem;
+}
+
+.birdListItem {
+	font-family: "Nanum Futuretree";
+	max-width: 95%;
+	min-height: 2.0rem;
+	font-size: 2.0rem;
+	white-space : nowrap;
+	background-color: #ffffff;
+	color: #000000;
+	margin-block: 0.4rem;
+	padding: 0.8em;
+	position: relative;
+	-webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.8);
+	-moz-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.8);
+	box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.8);
+}
+
+.birdListItem:before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 1.2rem solid #ffffff;
+	border-left: 1.2rem solid var(--green);
+	-webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+	-moz-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+	box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+}

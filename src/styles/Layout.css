@@ -1,0 +1,55 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	background-color: var(--greenish);
+}
+
+.layout .content {
+	overflow: scroll;
+	min-height: calc(100vh - 6rem);
+	max-width: 800px;
+}
+
+.footer {
+	left: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: var(--green);
+	color: white;
+	text-align: center;
+	font-size: 0.7rem;
+	padding-block: 1em;
+}
+
+.headerBar {
+	top: 0;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--green);
+	color: #ffffff;
+	padding-top: 0.5em;
+	padding-bottom: 0.3em;
+	align-items: center;
+	font-size: 1.8rem;
+	font-family: "a Abstract Groovy";
+}
+
+.headerBar a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.headerBar .hamburger {
+	margin-left: 1rem;
+}
+
+.headerBar .random {
+	margin-right: 1rem;
+}

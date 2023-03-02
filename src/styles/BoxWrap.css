@@ -1,0 +1,29 @@
+.boxWrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-inline: 10%;
+	margin-bottom: 1rem;
+	width: calc(80% + 1rem);
+}
+
+.box {
+	padding: 1.1em;
+	position: relative;
+	background-color: var(--whitish);
+	-webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.8);
+	-moz-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.8);
+	box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.8);
+}
+
+.box:before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 1rem solid var(--whitish);
+	border-left: 1rem solid var(--greenish);
+	-webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+	-moz-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+	box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+}

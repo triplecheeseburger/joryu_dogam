@@ -1,0 +1,46 @@
+.bigBird {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.imageBox {
+	text-align: center;
+}
+
+.imageBox img {
+	box-shadow:
+			-3.1rem -3.1rem 0 -2.5rem var(--brown),
+			3.1rem 3.1rem 0 -2.5rem var(--brown);
+	width: 80%;
+	border-radius: 0.1rem;
+	margin-block: 1.5rem;
+}
+
+.texts {
+	color: #000000;
+	font-family: "Nanum Futuretree";
+}
+
+hr {
+	height: 1px;
+	border: 0;
+	background-color: var(--greenish);
+}
+
+.name {
+	font-size: 2.0rem;
+	font-weight: 600;
+}
+
+.scienceName {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.generalDescription, .ecoDescription {
+	font-size: 1.35rem;
+	font-weight: 400;
+}
+
