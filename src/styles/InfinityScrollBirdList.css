@@ -6,7 +6,7 @@ a {
 .birdList {
 	display: flex;
 	flex-direction: column;
-	align-items: start;
+	align-items: flex-start;
 	margin-top: 1.5rem;
 	padding-bottom: 1.5rem;
 	margin-inline: 1.5rem;

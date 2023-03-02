@@ -2,8 +2,8 @@ import '../styles/RandomBirdButton.css'
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 function RandomBirdButton() {
-	const imageUrl = "qbox.png"
-	const clickedUrl = "qbox-clicked.png"
+	const imageUrl = process.env.PUBLIC_URL + "/qbox.png"
+	const clickedUrl = process.env.PUBLIC_URL + "/qbox-clicked.png"
 	const [isHovering, setIsHovering] = useState(0);
 
 	return (

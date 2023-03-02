@@ -7,7 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Layout>
 					<Routes>
 						<Route path="/" element={<RandomBirdButton />} />

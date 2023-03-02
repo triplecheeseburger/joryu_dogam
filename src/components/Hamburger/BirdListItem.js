@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
-import {useEffect} from "react";
 
-function BirdListItem({ bird, ref }) {
+function BirdListItem({ bird }) {
 	return (
 		<div className='birdListItem'>
 			<Link to='/bird' state={{birdNum: bird.num}}>
