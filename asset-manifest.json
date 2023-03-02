@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/joryu_dogam/static/css/main.a167f6d0.css",
-    "main.js": "/joryu_dogam/static/js/main.9584bec1.js",
+    "main.js": "/joryu_dogam/static/js/main.0f58834e.js",
     "static/js/787.875279f9.chunk.js": "/joryu_dogam/static/js/787.875279f9.chunk.js",
     "static/media/mongdol_nanum.woff": "/joryu_dogam/static/media/mongdol_nanum.5953b8957d07e595bd31.woff",
     "static/media/nanumHandwritting-FutureTree.woff": "/joryu_dogam/static/media/nanumHandwritting-FutureTree.25843605677be89bb8cd.woff",
@@ -12,11 +12,11 @@
     "static/media/aAbstractGroovy.woff": "/joryu_dogam/static/media/aAbstractGroovy.411d4db4bb0b3cca9b88.woff",
     "index.html": "/joryu_dogam/index.html",
     "main.a167f6d0.css.map": "/joryu_dogam/static/css/main.a167f6d0.css.map",
-    "main.9584bec1.js.map": "/joryu_dogam/static/js/main.9584bec1.js.map",
+    "main.0f58834e.js.map": "/joryu_dogam/static/js/main.0f58834e.js.map",
     "787.875279f9.chunk.js.map": "/joryu_dogam/static/js/787.875279f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a167f6d0.css",
-    "static/js/main.9584bec1.js"
+    "static/js/main.0f58834e.js"
   ]
 }
