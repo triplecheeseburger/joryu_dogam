@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/movie-app/static/css/main.4db40159.css",
+    "main.js": "/movie-app/static/js/main.f43434e5.js",
+    "static/js/787.875279f9.chunk.js": "/movie-app/static/js/787.875279f9.chunk.js",
+    "static/media/mongdol_nanum.woff": "/movie-app/static/media/mongdol_nanum.5953b8957d07e595bd31.woff",
+    "static/media/nanumHandwritting-FutureTree.woff": "/movie-app/static/media/nanumHandwritting-FutureTree.25843605677be89bb8cd.woff",
+    "static/media/nanumHandwritting-letter.woff": "/movie-app/static/media/nanumHandwritting-letter.d5a23d813173379a8af8.woff",
+    "static/media/NanumGothic-Regular.woff": "/movie-app/static/media/NanumGothic-Regular.048e4940f5d6c9a58478.woff",
+    "static/media/KCC-Kimhoon.woff": "/movie-app/static/media/KCC-Kimhoon.ea9b13039e2fb0a49d83.woff",
+    "static/media/KCCAhnjunggeun.woff": "/movie-app/static/media/KCCAhnjunggeun.b38145e26192e3986039.woff",
+    "static/media/aAbstractGroovy.woff": "/movie-app/static/media/aAbstractGroovy.411d4db4bb0b3cca9b88.woff",
+    "index.html": "/movie-app/index.html",
+    "main.4db40159.css.map": "/movie-app/static/css/main.4db40159.css.map",
+    "main.f43434e5.js.map": "/movie-app/static/js/main.f43434e5.js.map",
+    "787.875279f9.chunk.js.map": "/movie-app/static/js/787.875279f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4db40159.css",
+    "static/js/main.f43434e5.js"
+  ]
+}
