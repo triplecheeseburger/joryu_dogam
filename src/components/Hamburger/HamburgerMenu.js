@@ -1,6 +1,6 @@
 import InfinityScrollBirdList from './InfinityScrollBirdList'
 import InfinityScrollSearchBird from "./InfinityScrollSearchBird";
-import {GrClose} from 'react-icons/gr'
+import {IoMdClose} from 'react-icons/io'
 import {BsSearch} from 'react-icons/bs'
 import {useState} from "react";
 import '../../styles/HamburgerMenu.css'
@@ -19,7 +19,7 @@ function HamburgerMenu({closeMenu}) {
 	return (
 		<div className='background' onClick={closeMenu}>
 			<div className='hamburgerMenu' onClick={(e) => e.stopPropagation()}>
-				<div className='closeButtonContainer'>
+				<div className='buttonsContainer'>
 					<div className='searchButton' onClick={toggleSearch}>
 						<BsSearch />
 					</div>
@@ -27,11 +27,11 @@ function HamburgerMenu({closeMenu}) {
 						<input
 							type='text'
 							onChange={inputHandler}
-							placeholder='Search'
+							placeholder=''
 							value={birdQuery}
 						/>}
 					<div className='closeButton'>
-						<GrClose onClick={closeMenu}/>
+						<IoMdClose onClick={closeMenu}/>
 					</div>
 				</div>
 				{isSearchOpen ?

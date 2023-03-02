@@ -16,7 +16,6 @@ function InfinityScrollBirdList({birdQuery}) {
 	}, [pageNo]);
 
 	useEffect(() => {
-		console.log(birdQuery);
 		setBirdList([]);
 		setPageNo(0);
 	}, [birdQuery]);
