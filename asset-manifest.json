@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/joryudogam.shop/static/css/main.a1199d69.css",
-    "main.js": "/joryudogam.shop/static/js/main.1d3e3fc2.js",
-    "static/js/787.875279f9.chunk.js": "/joryudogam.shop/static/js/787.875279f9.chunk.js",
-    "static/media/mongdol_nanum.woff": "/joryudogam.shop/static/media/mongdol_nanum.5953b8957d07e595bd31.woff",
-    "static/media/nanumHandwritting-FutureTree.woff": "/joryudogam.shop/static/media/nanumHandwritting-FutureTree.25843605677be89bb8cd.woff",
-    "static/media/nanumHandwritting-letter.woff": "/joryudogam.shop/static/media/nanumHandwritting-letter.d5a23d813173379a8af8.woff",
-    "static/media/NanumGothic-Regular.woff": "/joryudogam.shop/static/media/NanumGothic-Regular.048e4940f5d6c9a58478.woff",
-    "static/media/KCC-Kimhoon.woff": "/joryudogam.shop/static/media/KCC-Kimhoon.ea9b13039e2fb0a49d83.woff",
-    "static/media/KCCAhnjunggeun.woff": "/joryudogam.shop/static/media/KCCAhnjunggeun.b38145e26192e3986039.woff",
-    "static/media/aAbstractGroovy.woff": "/joryudogam.shop/static/media/aAbstractGroovy.411d4db4bb0b3cca9b88.woff",
-    "index.html": "/joryudogam.shop/index.html",
-    "main.a1199d69.css.map": "/joryudogam.shop/static/css/main.a1199d69.css.map",
-    "main.1d3e3fc2.js.map": "/joryudogam.shop/static/js/main.1d3e3fc2.js.map",
-    "787.875279f9.chunk.js.map": "/joryudogam.shop/static/js/787.875279f9.chunk.js.map"
+    "main.css": "/static/css/main.b3100375.css",
+    "main.js": "/static/js/main.2baf3a19.js",
+    "static/js/787.875279f9.chunk.js": "/static/js/787.875279f9.chunk.js",
+    "static/media/mongdol_nanum.woff": "/static/media/mongdol_nanum.5953b8957d07e595bd31.woff",
+    "static/media/nanumHandwritting-FutureTree.woff": "/static/media/nanumHandwritting-FutureTree.25843605677be89bb8cd.woff",
+    "static/media/nanumHandwritting-letter.woff": "/static/media/nanumHandwritting-letter.d5a23d813173379a8af8.woff",
+    "static/media/NanumGothic-Regular.woff": "/static/media/NanumGothic-Regular.048e4940f5d6c9a58478.woff",
+    "static/media/KCC-Kimhoon.woff": "/static/media/KCC-Kimhoon.ea9b13039e2fb0a49d83.woff",
+    "static/media/KCCAhnjunggeun.woff": "/static/media/KCCAhnjunggeun.b38145e26192e3986039.woff",
+    "static/media/aAbstractGroovy.woff": "/static/media/aAbstractGroovy.411d4db4bb0b3cca9b88.woff",
+    "index.html": "/index.html",
+    "main.b3100375.css.map": "/static/css/main.b3100375.css.map",
+    "main.2baf3a19.js.map": "/static/js/main.2baf3a19.js.map",
+    "787.875279f9.chunk.js.map": "/static/js/787.875279f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1199d69.css",
-    "static/js/main.1d3e3fc2.js"
+    "static/css/main.b3100375.css",
+    "static/js/main.2baf3a19.js"
   ]
 }
