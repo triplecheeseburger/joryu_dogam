@@ -13,7 +13,7 @@ function InfinityScrollBirdList({birdQuery}) {
 	useEffect(() => {
 		if (pageNo === 0)
 			setPageNo(1);
-		fetchBirdListDebounced(pageNo);
+		fetchBirdList(pageNo);
 	}, [pageNo]);
 
 	useEffect(() => {
@@ -48,12 +48,12 @@ function InfinityScrollBirdList({birdQuery}) {
 		};
 	}, [bottom]);
 
-	const fetchBirdListDebounced = debounce(fetchBirdList, 500);
 	async function fetchBirdList(no) {
 		try {
 			if (birdQuery === '' || birdQuery === undefined) {
 				return ;
 			}
+			console.log(birdQuery);
 			const url = process.env.REACT_APP_DATA_LIST_URL + '?serviceKey=' + process.env.REACT_APP_DATA_KEY + '&st=1&sw=' + birdQuery + '&numOfRows=' + numOfRows + '&pageNo=' + no;
 			const response = await fetch(url);
 			const birdList = await response.text();
