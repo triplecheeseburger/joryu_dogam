@@ -1,7 +1,8 @@
-import {useEffect, useState, useRef} from "react";
+import {useEffect, useState, useRef, useCallback} from "react";
 import BirdListItem from "./BirdListItem";
 import {debounce} from "lodash";
 import '../../styles/InfinityScrollBirdList.css'
+
 function InfinityScrollBirdList({birdQuery}) {
 	let totalCount;
 	const numOfRows = 20;
@@ -11,12 +12,16 @@ function InfinityScrollBirdList({birdQuery}) {
 	const bottomObserver = useRef(null);
 
 	useEffect(() => {
-		if (pageNo === 0)
+		if (pageNo === 0) {
 			setPageNo(1);
+			return ;
+		}
+		console.log('pageno useEffect: ' + pageNo + ' ' + birdQuery);
 		fetchBirdList(pageNo);
 	}, [pageNo]);
 
 	useEffect(() => {
+		console.log('birdquery useEffect: ' + birdQuery);
 		setBirdList([]);
 		setPageNo(0);
 	}, [birdQuery]);
@@ -31,7 +36,7 @@ function InfinityScrollBirdList({birdQuery}) {
 					setPageNo((prev) => prev + 1);
 				}
 			},
-			{ threshold: 0.1, rootMargin: '1000px'},
+			{threshold: 0.1, rootMargin: '1000px'},
 		);
 		bottomObserver.current = observer;
 	}, []);
@@ -53,12 +58,11 @@ function InfinityScrollBirdList({birdQuery}) {
 			if (birdQuery === '' || birdQuery === undefined) {
 				return ;
 			}
-			console.log(birdQuery);
 			const url = process.env.REACT_APP_DATA_LIST_URL + '?serviceKey=' + process.env.REACT_APP_DATA_KEY + '&st=1&sw=' + birdQuery + '&numOfRows=' + numOfRows + '&pageNo=' + no;
 			const response = await fetch(url);
-			const birdList = await response.text();
+			const birdXmls = await response.text();
 			const parser = new DOMParser();
-			const xmlDoc = parser.parseFromString(birdList, "text/xml");
+			const xmlDoc = parser.parseFromString(birdXmls, "text/xml");
 			totalCount = xmlDoc.getElementsByTagName('totalCount')[0].innerHTML;
 			if (totalCount === '0') {
 				return;
@@ -78,7 +82,7 @@ function InfinityScrollBirdList({birdQuery}) {
 	return (
 		<div className='birdList'>
 			{birdList.map((bird, index) => {
-				return <BirdListItem bird={bird} key={bird.num} />
+				return <BirdListItem bird={bird} key={bird.num}/>
 			})}
 			<div className='bottom' ref={setBottom}>
 				Surprise!

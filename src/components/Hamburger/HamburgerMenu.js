@@ -2,9 +2,13 @@ import InfinityScrollBirdList from './InfinityScrollBirdList'
 import InfinityScrollSearchBird from "./InfinityScrollSearchBird";
 import {IoMdClose} from 'react-icons/io'
 import {BsSearch} from 'react-icons/bs'
-import {useState} from "react";
+import {useState, useEffect, useCallback} from "react";
+import {debounce} from "lodash";
 import '../../styles/HamburgerMenu.css'
+
 function HamburgerMenu({closeMenu}) {
+	const [showValue, setShowValue] = useState('');
+	const [debounceValue, setDebounceValue] = useState('');
 	const [birdQuery, setBirdQuery] = useState('');
 	const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -13,8 +17,18 @@ function HamburgerMenu({closeMenu}) {
 	}
 
 	const inputHandler = (e) => {
-		setBirdQuery(e.target.value);
+		setShowValue(e.target.value)
+		debounceInputHandler(e.target.value);
 	}
+
+	const debounceInputHandler = useCallback(debounce((value) => {
+		setDebounceValue(value);
+	}, 500), []);
+
+	useEffect(() => {
+		console.log('out useEffect: ' + debounceValue);
+		setBirdQuery(debounceValue);
+	}, [debounceValue])
 
 	return (
 		<div className='background' onClick={closeMenu}>
@@ -28,7 +42,7 @@ function HamburgerMenu({closeMenu}) {
 							type='text'
 							onChange={inputHandler}
 							placeholder=''
-							value={birdQuery}
+							value={showValue}
 						/>}
 					<div className='closeButton'>
 						<IoMdClose onClick={closeMenu}/>
