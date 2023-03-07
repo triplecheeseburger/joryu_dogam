@@ -7,15 +7,23 @@
 
 .imageBox {
 	text-align: center;
-}
-
-.imageBox img {
+	background-color: #ffffff;
 	box-shadow:
 			-3.1rem -3.1rem 0 -2.5rem var(--brown),
 			3.1rem 3.1rem 0 -2.5rem var(--brown);
-	width: 80%;
+	width: 80vw;
+	height: calc(80vw * (527 / 640));
+	max-width: 780px;
+	max-height: calc(780px * (527 / 640));
 	border-radius: 0.1rem;
 	margin-block: 1.5rem;
+	z-index: 1;
+}
+
+.imageBox img {
+	z-index: 2;
+	width: 100%;
+	border-radius: 0.1rem;
 }
 
 .texts {

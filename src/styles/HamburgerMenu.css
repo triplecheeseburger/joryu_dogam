@@ -5,11 +5,11 @@
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
-	z-index: 1;
+	z-index: 3;
 }
 
 .hamburgerMenu {
-	z-index: 0;
+	z-index: 4;
 	background-color: var(--green);
 	display: flex;
 	flex-direction: column;
