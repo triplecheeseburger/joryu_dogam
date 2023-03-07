@@ -1,5 +1,6 @@
 import {useEffect, useState, useRef} from "react";
 import BirdListItem from "./BirdListItem";
+import {debounce} from "lodash";
 import '../../styles/InfinityScrollBirdList.css'
 function InfinityScrollBirdList({birdQuery}) {
 	let totalCount;
@@ -12,7 +13,7 @@ function InfinityScrollBirdList({birdQuery}) {
 	useEffect(() => {
 		if (pageNo === 0)
 			setPageNo(1);
-		fetchBirdList(pageNo);
+		fetchBirdListDebounced(pageNo);
 	}, [pageNo]);
 
 	useEffect(() => {
@@ -47,6 +48,7 @@ function InfinityScrollBirdList({birdQuery}) {
 		};
 	}, [bottom]);
 
+	const fetchBirdListDebounced = debounce(fetchBirdList, 500);
 	async function fetchBirdList(no) {
 		try {
 			if (birdQuery === '' || birdQuery === undefined) {
