@@ -47,7 +47,6 @@ function BigBird() {
 		bird &&
 		<div className='bigBird'>
 			<div className='imageBox'>
-				{/*<div className='temp'></div>*/}
 				<LazyLoadImage
 					wrapperClassName={'image'}
 					src={bird?.imgUrl}
